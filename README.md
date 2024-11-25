@@ -5,7 +5,7 @@ A comprehensive project implementing Linear Regression to analyze and predict ou
 
 This repository provides a detailed implementation of a **Linear Regression model**, aiming to predict numerical outcomes based on input variables. The project focuses on applying linear regression techniques while exploring various stages of a machine learning workflow.
 
----
+--------------------------
 
 ## **Features**  
 - **Data Preprocessing**: Managed missing values and applied feature scaling to prepare the dataset for model training.  
