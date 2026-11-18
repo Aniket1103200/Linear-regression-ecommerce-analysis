@@ -1,53 +1,33 @@
-# Linear-regression-ecommerce-analysis
-A comprehensive project implementing Linear Regression to analyze and predict outcomes for an e-commerce company. The project demonstrates the entire workflow, including data preprocessing, model training, evaluation, and visualization. Built using Python libraries like NumPy, Pandas, Matplotlib, and scikit-learn.
+# E-Commerce Customer Spending – Linear Regression
 
-### **Linear Regression Project**  
+Predicts a customer's **Yearly Amount Spent** from their usage data. The business question: should the company invest more in its **mobile app** or its **website**?
 
-This repository provides a detailed implementation of a **Linear Regression model**, aiming to predict numerical outcomes based on input variables. The project focuses on applying linear regression techniques while exploring various stages of a machine learning workflow.
+> 📚 **Course project:** completed while following the Udemy course *Python for Data Science and Machine Learning Bootcamp* (Pierian Data). The dataset and task come from the course.
 
---------------------------
+## Data (`Ecommerce Customers`)
+Avg. Session Length · Time on App · Time on Website · Length of Membership → target: **Yearly Amount Spent**
 
-## **Features**  
-- **Data Preprocessing**: Managed missing values and applied feature scaling to prepare the dataset for model training.  
-- **Model Training**: Built and trained a Linear Regression model using scikit-learn.  
-- **Model Evaluation**: Assessed model performance through metrics like **Mean Squared Error (MSE)** and **R-Squared**.  
-- **Data Visualization**: Created insightful visualizations for data distributions and residual analysis.  
+## Approach
+1. Exploratory analysis with joint plots, pair plots and an `lmplot` of membership length vs. spending
+2. Train/test split and **Linear Regression** (scikit-learn)
+3. Evaluated with MAE, MSE and RMSE, plus a residual plot
+4. Interpreted the coefficients to answer the business question
 
----
+## Results
 
-## **Technologies Used**  
-- **Python**  
-- **Jupyter Notebook**  
-- **NumPy**  
-- **Pandas**  
-- **Matplotlib**  
-- **Scikit-learn**  
+| Metric | Value |
+|---|---|
+| MAE | 7.23 |
+| MSE | 79.81 |
+| RMSE | 8.93 |
 
----
+## Tech
+Python · pandas · NumPy · scikit-learn · Matplotlib · Seaborn · Jupyter
 
-## **How to Use**  
-
-1. **Clone the repository**:  
-   ```bash  
-   git clone https://github.com/Aniket1103200/linear-regression-project-ecommerce-analysis.git  
-   ```  
-
-2. **Navigate into the directory**:  
-   ```bash  
-   cd linear-regression-project-ecommerce-analysis  
-   ```  
-
-3. **Install dependencies**:  
-   ```bash  
-   pip install -r requirements.txt  
-   ```  
-
-4. **Run the Jupyter notebook**:  
-   ```bash  
-   jupyter notebook Linear_Regression_Project.ipynb  
-   ```  
-
----
-
-## **License**  
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.  
+## Run it
+```bash
+git clone https://github.com/Aniket1103200/Linear-regression-ecommerce-analysis.git
+cd Linear-regression-ecommerce-analysis
+pip install -r requirements.txt
+jupyter notebook ecommerce_linear_regression.ipynb
+```
